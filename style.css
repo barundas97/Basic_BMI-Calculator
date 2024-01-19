@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    border : none;
+    max-width: 40%;
+    height: 50vh;
+    margin:50px auto;
+    background: rgb(120, 29, 120);
+    box-shadow: 5px 5px 6px ;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: bisque;
+    padding: 10px;
+}
+#display{
+    width :75%;
+    min-height: 120px ;
+    margin: auto;
+}
+
+label{
+    color: antiquewhite;
+}
+
+input{
+    width:60%;
+    margin: 4px;
+}
+
+button{
+    margin-left: 85px;
+    border: 1px solid red;
+}
+
+button:hover{
+    background: rgb(255, 0, 0);
+    border-radius: 15px;
+    border: none;
+    color: bisque;
+}
+
+button:active{
+    background-color: antiquewhite;
+    color: blueviolet;
+}
+
+span{
+    display: block;
+    margin-top: 23px;
+    color: rgb(255, 0, 0);
+    background: rgb(246, 235, 255);
+    text-align: center;
+    border: none;
+}
+
+   /* Here use Media Query for Responsive*/
+
+@media screen and (max-width:1678px) {
+    #container{
+        border : none;
+        max-width: 33%;
+        height: 50vh;
+        margin:50px auto;
+        background: rgb(120, 29, 120);
+    };
+   
+}
+
+@media screen and (max-width:918px) {
+    #container{
+        height:70vh
+    }
+    input{
+        width:70%;
+        margin: 4px;
+    }
+    button{
+        margin:5px;
+        border: 1px solid red;
+        width: 70px;
+        height:29px;
+    }
+    #display{
+        height:160px;
+    }
+}
+
+@media screen and (max-width:873px) {
+    #container{
+        height:65vh
+    }
+}
